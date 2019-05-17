@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate {
     
     @IBOutlet weak var todoTableView: UITableView!
 
@@ -26,22 +26,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     @IBAction func addTodo(_ sender: Any) {
-        let todoAlert = UIAlertController(title: "Add todo", message: "/ wydarzenie / czas / kategoria /", preferredStyle: .alert)
         
+        
+        let todoAlert = UIAlertController(title: "Add todo", message: "/ wydarzenie / czas / kategoria /", preferredStyle: .alert)
+
         todoAlert.addTextField()
         let addTodoAction = UIAlertAction(title: "Dodaj", style: .default) { (action) in
             let newTodo = todoAlert.textFields![0]
             self.todos.append(newTodo.text!)
             self.todoTableView.reloadData()
-            
+
         }
         let cancelAction = UIAlertAction(title: "Anuluj", style: .default)
-        
+
         todoAlert.addAction(addTodoAction)
         todoAlert.addAction(cancelAction)
-        
+
         present(todoAlert, animated: true, completion: nil)
 
+//
+//
+        // MARK: - UIPopoverPresentationControllerDelegate method
+        
+        func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+            
+            // Force popover style
+            return UIModalPresentationStyle.none
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
