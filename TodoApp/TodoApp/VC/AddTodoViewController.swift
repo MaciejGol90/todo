@@ -33,12 +33,14 @@ class AddTodoViewController: UIViewController {
             object: nil
         )
         textView.becomeFirstResponder()
+        categoryControl.becomeFirstResponder()
+        datePicker.becomeFirstResponder()
         
         if let todo = todo {
             textView.text = todo.title
             textView.text = todo.title
-        
-            UIResponder.index(ofAccessibilityElement: todo.category)
+            categoryControl.selectedSegmentIndex = Int(todo.category)
+            datePicker?.datePickerMode = .date
         }
     }
     
@@ -60,6 +62,9 @@ class AddTodoViewController: UIViewController {
     fileprivate func dismissAndResign() {
         dismiss(animated: true)
         textView.resignFirstResponder()
+        
+        datePicker?.datePickerMode = .date
+        
     }
     
     @IBAction func cancelButton(_ sender: UIButton) {

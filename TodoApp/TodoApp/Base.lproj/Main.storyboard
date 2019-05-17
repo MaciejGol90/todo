@@ -46,8 +46,9 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="ToDo" largeTitleDisplayMode="always" id="eMp-pZ-OvH">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="kNT-UI-ezG">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="274-ja-Pud" kind="presentation" id="0il-rW-3eD"/>
+                                <segue destination="274-ja-Pud" kind="presentation" identifier="ShowAddTodo" id="0il-rW-3eD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -104,13 +105,13 @@
                                         </date>
                                         <locale key="locale" localeIdentifier="pl"/>
                                     </datePicker>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wXZ-5I-CQa">
-                                        <rect key="frame" x="52" y="260" width="250" height="44"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wXZ-5I-CQa">
+                                        <rect key="frame" x="74.5" y="260" width="205" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdA-Oi-xON">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="44"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="oHp-ai-uaM"/>
+                                                    <constraint firstAttribute="width" constant="75" id="oHp-ai-uaM"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="Anuluj"/>
@@ -124,9 +125,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="245" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xn2-5P-MbV">
-                                                <rect key="frame" x="90" y="0.0" width="160" height="44"/>
+                                                <rect key="frame" x="95" y="0.0" width="110" height="44"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="160" id="0S7-yl-KUf"/>
+                                                    <constraint firstAttribute="width" constant="110" id="0S7-yl-KUf"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="Dodaj"/>
@@ -140,6 +141,12 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Xn2-5P-MbV" firstAttribute="top" secondItem="wXZ-5I-CQa" secondAttribute="top" id="DB6-jQ-gQx"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xn2-5P-MbV" secondAttribute="trailing" id="g5n-5Y-rcv"/>
+                                            <constraint firstItem="Xn2-5P-MbV" firstAttribute="leading" secondItem="zdA-Oi-xON" secondAttribute="trailing" constant="20" id="p9d-Mx-8BR"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xn2-5P-MbV" secondAttribute="bottom" id="q2l-hO-sD7"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -157,10 +164,10 @@
                         <viewLayoutGuide key="safeArea" id="5sg-4E-43t"/>
                     </view>
                     <connections>
-                        <outlet property="addButton" destination="Xn2-5P-MbV" id="p8o-n4-a5a"/>
-                        <outlet property="bottomConstraint" destination="JhX-iT-i6n" id="zFx-pG-ZbW"/>
-                        <outlet property="categoryControl" destination="Quk-fZ-cyu" id="TOv-Gz-XzB"/>
-                        <outlet property="datePicker" destination="zlf-Rq-Wsb" id="sM7-6S-EbM"/>
+                        <outlet property="addButton" destination="Xn2-5P-MbV" id="9J9-hX-9jb"/>
+                        <outlet property="bottomConstraint" destination="JhX-iT-i6n" id="Urr-Lg-U1N"/>
+                        <outlet property="categoryControl" destination="Quk-fZ-cyu" id="zHi-ur-DRe"/>
+                        <outlet property="datePicker" destination="zlf-Rq-Wsb" id="xGx-OG-SDq"/>
                         <outlet property="textView" destination="JAt-4z-tZS" id="DDc-TK-yAi"/>
                     </connections>
                 </viewController>
@@ -174,9 +181,9 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3lb-6D-c3y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="01C-KK-6A6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="113.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.091190807521343231" green="0.74576514959335327" blue="0.34238320589065552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="55"/>
                             <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
