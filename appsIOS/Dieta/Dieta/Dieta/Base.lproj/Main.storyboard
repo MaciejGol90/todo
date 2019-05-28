@@ -18,14 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UHF-8g-c7p">
-                                <rect key="frame" x="20" y="142" width="374" height="263"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Dieta przyspieszająca metabolizm została opracowana przez specjalistkę od przemiany materii Amerykankę Haylie Pomroy. Jak sama nazwa wskazuje jej celem jest&lt;strong&gt; przyspieszenie przemiany materii, co skutkuje nie tylko spalaniem tłuszczu, ale i świetnym samopoczuciem. Dieta jest popularna w USA, a wg jej zasad Pomroy odchudzała m.in. Jennifer Lopez, Reese Whiterspoon i Cher</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Szybka przemiana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="324-e5-8hx">
                                 <rect key="frame" x="20" y="87" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -38,12 +30,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Faza 1"/>
+                                <connections>
+                                    <segue destination="2Ir-jN-PmB" kind="presentation" id="zdi-Me-MUD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cId-rc-dYi">
                                 <rect key="frame" x="166" y="516" width="98" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Faza 2"/>
+                                <connections>
+                                    <segue destination="Ofv-Fg-zFa" kind="presentation" id="dCh-rC-5WN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-BM-Rvu">
                                 <rect key="frame" x="166" y="613" width="99" height="54"/>
@@ -51,6 +49,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Faza 3"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UHF-8g-c7p">
+                                <rect key="frame" x="20" y="141" width="374" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Dieta przyspieszająca metabolizm została opracowana przez specjalistkę od przemiany materii Amerykankę Haylie Pomroy. Jak sama nazwa wskazuje jej celem jest&lt;strong&gt; przyspieszenie przemiany materii, co skutkuje nie tylko spalaniem tłuszczu, ale i świetnym samopoczuciem. Dieta jest popularna w USA, a wg jej zasad Pomroy odchudzała m.in. Jennifer Lopez, Reese Whiterspoon i Cher</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Md1-WX-iKh"/>
@@ -61,6 +67,217 @@
             <point key="canvasLocation" x="-568.1159420289855" y="-86.383928571428569"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="diK-cl-4J1">
+            <objects>
+                <viewController id="Ofv-Fg-zFa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YgL-bJ-oGD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faza 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnc-9c-1yH">
+                                <rect key="frame" x="186" y="124" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7b-nR-nQJ">
+                                <rect key="frame" x="61" y="65" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpW-27-WIw">
+                                <rect key="frame" x="124" y="185" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lista produktow w fazie 2"/>
+                                <connections>
+                                    <segue destination="hee-C6-qkO" kind="presentation" id="7v5-UP-WPd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FS2-OG-efO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRZ-xU-1SW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-611" y="827"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BcG-eN-uI0">
+            <objects>
+                <viewController id="hee-C6-qkO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yM8-lm-swH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAZA 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3b-9n-aSr">
+                                <rect key="frame" x="186" y="112" width="57" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kms-Tp-zm9">
+                                <rect key="frame" x="58" y="86" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KxZ-Ta-EDC">
+                                <rect key="frame" x="20" y="163" width="374" height="733"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">BIAŁKO
+baranina
+łosoś wędzony (bez azotanów)
+białko grochu (w proszku, czyste, bez dodatków)
+łoś
+białko słonecznika, dyni, konopne (w proszku, odtłuszczone, czyste, bez dodatków)
+makrela wędzona +/-
+bizon
+omułki
+dorsz
+polędwica - befsztyk
+flądra
+sardynki w sosie własnym
+halibut
+sarnina
+indyk - bekon bez azotanów (niedostępny w Polsce)
+sola
+indyk - mięso mielone, bez konserwantów (tylko chude)
+struś – mięso suszone (bez azotanów, cukru, soi i pszenicy)
+indyk - mięso suszone (bez azotanów, cukru, soi i pszenicy)
+struś – mięso świeże
+indyk - pierś (bez kości i skóry)
+tuńczyk świeży
+indyk wędzony, bez konserwantów
+tuńczyk z puszki w wodzie
+jagnięcina - comber, gicz, mielona, udziec
+wędlina bez azotanu sodu i niedozwolonych dodatków
+jajko - samo białko
+wieprzowina - chude części
+kurczak - mięso mielone z piersi
+wołowina - chude części, mielona bez konserwantówkurczak - pierś (bez kości i skóry)żelatyna
+langusta
+WARZYWA
+boćwina (burak liściowy)
+pieczarki
+brokuły
+por
+cebula zwykła i czerwona
+pszenica zielona (porcja 55 g)
+dymka
+rabarbar
+endywia
+rzeżucha
+fasolka szparagowa - żółta i zielona
+rzodkiewka
+fenkuł/koper włoski
+rzodkiew
+grzyby
+sałata (każda oprócz lodowej)
+jarmuż
+seler korzeniowy
+jícama (rodzaj rzepy, w Polsce niedostępna, można ją hodować samodzielnie)
+seler naciowy
+kapusta świeża (każda oprócz brukselki) i kiszona
+spirulina
+ogórek świeży i kiszony
+szparagi
+papryczka chili
+szpinak
+papryczka jalapeno
+kiełki (wszystkie rodzaje)
+papryka czerwona, zielona, żółta
+zioła wszystkie (np. pokrzywa, lipa, czystek, ostropest i wszelkie inne, których nie sposób wymienić wszystkich)
+PRZYPRAWY I DODATKI
+agar agar
+mięta - ekstrakt
+aminokwasy kokosowe (przyprawa płynna)
+mięta świeża i suszona
+babka płesznik
+musztarda
+bazylia - świeża i suszona
+natka świeża i suszona
+chili w proszku
+ocet balsamiczny
+chrzan
+ocet jabłkowy
+curry w proszku
+ocet kokosowy
+cynamon
+ocet słodowy
+cytryna
+ocet winny
+czosnek- świeży, suszony, granulowany
+oregano świeże i suszone
+drożdże świeże i suszone
+papryka w proszku
+ekstrakt z owocu mnicha (do słodzenia)
+pasta chili
+erytrol
+pieprz biały, czarny, kajeński, cytrynowy
+estragon
+płatki drożdżowe
+gorczyca
+proszek do pieczenia
+herbata senna
+rozmaryn świeży i suszony
+herbata ziołowa (każda naturalna bez aromatów i sztucznych dodatków)
+rukiew wodna
+imbir świeży i suszony
+rukola
+kakao ciemne, bez cukru
+sałata lodowa (nie jako warzywo, lecz dodatek)
+kapary
+skórka z cytryny
+karob
+soda oczyszczona
+kardamon
+sok z cytryny świeży
+kawa zbożowa
+sok z limonki świeży
+kminek
+sól morska, himalajska
+kolendra świeża i suszona
+stewia w proszku i w płynie
+koper świeży i susony
+szałwia świeża i suszona
+ksylitol (z brzozy)
+szczypiorek
+kumin, kmin rzymski
+tabasco
+limonka
+tamari
+liście laurowe
+tymianek świeży i suszony
+majeranek suszony
+wanilia ekstrakt
+makaron kojac
+woda, także gazowana
+maranta/ mąka arrarutowa (maks. 2 łyżki)
+ziarna kakaowe (cacao nibs) - 1 łyżka</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHM-jL-XBa">
+                                <rect key="frame" x="56" y="48" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="sVd-b3-prA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FGo-11-NH0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0EW-Ke-HAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333.33333333333337" y="776.78571428571422"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dieta" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,14 +285,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Szybka przemiana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gks-IE-PXX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Szybka przemiana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gks-IE-PXX">
                                 <rect key="frame" x="-16" y="119" width="456" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="phE-sh-NZO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4y-K4-AOz">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4y-K4-AOz">
                                 <rect key="frame" x="158" y="438" width="115" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="VN4-IL-5Df"/>
@@ -86,33 +305,40 @@
                                     <segue destination="2Ir-jN-PmB" kind="presentation" id="3oH-WW-UFp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-uw-EPf">
-                                <rect key="frame" x="156" y="546" width="120" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-uw-EPf">
+                                <rect key="frame" x="155" y="546" width="121" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="Faza 2"/>
+                                <connections>
+                                    <segue destination="Ofv-Fg-zFa" kind="presentation" id="d6l-zI-mlz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eN6-kT-qOd">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eN6-kT-qOd">
                                 <rect key="frame" x="155" y="647" width="121" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="Faza 3"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9L-mt-PsD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9L-mt-PsD">
                                 <rect key="frame" x="141" y="255" width="153" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Założenia Diety"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="t4y-K4-AOz" firstAttribute="centerX" secondItem="gBe-uw-EPf" secondAttribute="centerX" id="1e7-SK-kaP"/>
-                            <constraint firstItem="gBe-uw-EPf" firstAttribute="trailing" secondItem="eN6-kT-qOd" secondAttribute="trailing" id="IYo-eE-7YT"/>
-                            <constraint firstItem="eN6-kT-qOd" firstAttribute="top" secondItem="gBe-uw-EPf" secondAttribute="bottom" constant="41" id="MqH-xo-FSF"/>
-                            <constraint firstItem="gBe-uw-EPf" firstAttribute="top" secondItem="t4y-K4-AOz" secondAttribute="bottom" constant="48" id="PPc-sS-GpN"/>
-                            <constraint firstItem="eN6-kT-qOd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="WQO-lW-GOz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eN6-kT-qOd" secondAttribute="bottom" constant="283" id="XDm-If-vEt"/>
-                            <constraint firstItem="gBe-uw-EPf" firstAttribute="centerX" secondItem="eN6-kT-qOd" secondAttribute="centerX" id="hy1-nU-Z4V"/>
-                            <constraint firstItem="gBe-uw-EPf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sqU-8E-bw1"/>
+                            <constraint firstItem="T9L-mt-PsD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3ug-rz-Hr6"/>
+                            <constraint firstItem="gBe-uw-EPf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eN6-kT-qOd" secondAttribute="trailing" id="BPd-Wh-Z9R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T9L-mt-PsD" secondAttribute="trailing" constant="120" id="SIx-wA-6Bl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eN6-kT-qOd" secondAttribute="bottom" constant="155" id="Tou-jR-0PW"/>
+                            <constraint firstItem="eN6-kT-qOd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xw9-8a-Xsd"/>
+                            <constraint firstItem="T9L-mt-PsD" firstAttribute="top" secondItem="Gks-IE-PXX" secondAttribute="bottom" constant="6" id="eX2-5y-iAE"/>
+                            <constraint firstItem="gBe-uw-EPf" firstAttribute="top" secondItem="t4y-K4-AOz" secondAttribute="bottom" constant="48" id="g8Q-Wd-OlY"/>
+                            <constraint firstItem="eN6-kT-qOd" firstAttribute="top" secondItem="gBe-uw-EPf" secondAttribute="bottom" constant="41" id="ge0-Iq-lvB"/>
+                            <constraint firstItem="Gks-IE-PXX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-36" id="iQQ-wW-pE1"/>
+                            <constraint firstItem="Gks-IE-PXX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="lFa-j0-Z00"/>
+                            <constraint firstItem="gBe-uw-EPf" firstAttribute="centerX" secondItem="t4y-K4-AOz" secondAttribute="centerX" id="sfK-wZ-Y30"/>
+                            <constraint firstItem="gBe-uw-EPf" firstAttribute="centerX" secondItem="eN6-kT-qOd" secondAttribute="centerX" id="wOq-gZ-Rne"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gks-IE-PXX" secondAttribute="trailing" constant="-46" id="wwB-a2-pBF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -170,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3x-x5-HzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866.66666666666674" y="126.5625"/>
+            <point key="canvasLocation" x="952" y="56"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="we0-2x-V1A">
@@ -184,7 +410,7 @@
                                 <rect key="frame" x="20" y="114" width="374" height="782"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">BIAŁKO
+                                <string key="text">BIAŁKO
 białko grochu (w proszku, czyste, bez dodatków)
 kuropatwa
 białko słonecznika, dyni, konopne (w proszku, odtłuszczone, czyste, bez dodatków)
@@ -214,7 +440,10 @@ wędlina bez azotanu sodu i niedozwolonych dodatków
 kurczak - kiełbaski (bez azotanów)
 wieprzowina - chude części
 kurczak - mięso mielone z piersi
-wołowina - chude części, mielona bez konserwantówkurczak - pierś (bez kości i skóry)żelatynaOWOCE
+wołowina - chude części, mielona bez konserwantów
+kurczak - pierś (bez kości i skóry)
+żelatyna
+OWOCE
 agrest
 kumkwat
 ananas
@@ -378,7 +607,8 @@ limonka
 liście laurowe
 majeranek suszony
 wyroby z kiełkowanego ziarna: precle, tortille itd. (niedostępne w Polsce)
-  mąka z tapioki
+  
+mąka z tapioki
 żyto (chleb, mąka, płatki, makaron)
   mąka żytnia
 PRZYPRAWY I DODATKI
@@ -418,9 +648,11 @@ tabasco
 tamari
 tymianek świeży i suszony
 wanilia ekstrakt
-woda, także gazowana                                   makaron kojac
+woda, także gazowana
+                                   
+makaron kojac
 ziarna kakaowe (cacao nibs) - 1 łyżka
- </mutableString>
+ </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -459,6 +691,7 @@ ziarna kakaowe (cacao nibs) - 1 łyżka
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="3oH-WW-UFp"/>
-        <segue reference="cXB-SA-1tJ"/>
+        <segue reference="sVd-b3-prA"/>
+        <segue reference="d6l-zI-mlz"/>
     </inferredMetricsTieBreakers>
 </document>
