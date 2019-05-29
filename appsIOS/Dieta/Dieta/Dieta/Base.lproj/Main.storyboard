@@ -133,21 +133,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faza 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnc-9c-1yH">
-                                <rect key="frame" x="186" y="124" width="50" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faza 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnc-9c-1yH">
+                                <rect key="frame" x="186.5" y="124" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7b-nR-nQJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7b-nR-nQJ">
                                 <rect key="frame" x="61" y="65" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="back"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dom-ah-qBO">
-                                <rect key="frame" x="145" y="249" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dom-ah-qBO">
+                                <rect key="frame" x="145" y="249" width="124" height="30"/>
                                 <state key="normal" title="Polecane przepisy"/>
                                 <connections>
                                     <segue destination="6dR-xu-VBo" kind="popoverPresentation" popoverAnchorView="Dom-ah-qBO" id="bvU-mI-Lxj">
@@ -155,9 +152,8 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpW-27-WIw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpW-27-WIw">
                                 <rect key="frame" x="124" y="185" width="175" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Lista produktow w fazie 2"/>
                                 <connections>
                                     <segue destination="hee-C6-qkO" kind="presentation" id="7v5-UP-WPd"/>
@@ -165,12 +161,24 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zpW-27-WIw" firstAttribute="leading" secondItem="FS2-OG-efO" secondAttribute="leading" constant="124" id="18u-6h-A2P"/>
+                            <constraint firstItem="d7b-nR-nQJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FS2-OG-efO" secondAttribute="leading" id="CU5-8w-VQd"/>
+                            <constraint firstItem="zpW-27-WIw" firstAttribute="top" secondItem="Rnc-9c-1yH" secondAttribute="bottom" constant="40" id="DIK-27-3YK"/>
+                            <constraint firstItem="Dom-ah-qBO" firstAttribute="leading" secondItem="FS2-OG-efO" secondAttribute="leading" constant="145" id="Lnd-LB-Ttl"/>
+                            <constraint firstItem="d7b-nR-nQJ" firstAttribute="top" secondItem="FS2-OG-efO" secondAttribute="top" constant="21" id="TSj-lE-mgr"/>
+                            <constraint firstItem="zpW-27-WIw" firstAttribute="centerX" secondItem="Rnc-9c-1yH" secondAttribute="centerX" id="Tgh-wi-4FG"/>
+                            <constraint firstItem="FS2-OG-efO" firstAttribute="trailing" secondItem="d7b-nR-nQJ" secondAttribute="trailing" constant="319" id="WYh-yc-eZL"/>
+                            <constraint firstItem="FS2-OG-efO" firstAttribute="bottom" secondItem="Dom-ah-qBO" secondAttribute="bottom" constant="583" id="Wdd-6l-xRS"/>
+                            <constraint firstItem="Dom-ah-qBO" firstAttribute="centerX" secondItem="YgL-bJ-oGD" secondAttribute="centerX" id="Ytr-zZ-ake"/>
+                            <constraint firstItem="Dom-ah-qBO" firstAttribute="top" secondItem="zpW-27-WIw" secondAttribute="bottom" constant="34" id="bu6-XP-xkO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FS2-OG-efO"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRZ-xU-1SW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-611" y="827"/>
+            <point key="canvasLocation" x="-409" y="830"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BcG-eN-uI0">
