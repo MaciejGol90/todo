@@ -363,10 +363,10 @@ ziarna kakaowe (cacao nibs) - 1 łyżka</mutableString>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4y-K4-AOz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4y-K4-AOz">
                                 <rect key="frame" x="158" y="438" width="115" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="VN4-IL-5Df"/>
+                                    <constraint firstAttribute="width" constant="115" id="V5T-mr-Kmm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="Faza 1"/>
@@ -374,16 +374,22 @@ ziarna kakaowe (cacao nibs) - 1 łyżka</mutableString>
                                     <segue destination="2Ir-jN-PmB" kind="presentation" id="3oH-WW-UFp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-uw-EPf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-uw-EPf">
                                 <rect key="frame" x="155" y="546" width="121" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="yGK-Mt-nTm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="Faza 2"/>
                                 <connections>
                                     <segue destination="Ofv-Fg-zFa" kind="presentation" id="d6l-zI-mlz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eN6-kT-qOd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eN6-kT-qOd">
                                 <rect key="frame" x="155" y="647" width="121" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="XWr-W0-2ln"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="Faza 3"/>
                             </button>
@@ -395,18 +401,20 @@ ziarna kakaowe (cacao nibs) - 1 łyżka</mutableString>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eN6-kT-qOd" secondAttribute="trailing" constant="138" id="2Zy-gY-E8c"/>
                             <constraint firstItem="T9L-mt-PsD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3ug-rz-Hr6"/>
-                            <constraint firstItem="gBe-uw-EPf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eN6-kT-qOd" secondAttribute="trailing" id="BPd-Wh-Z9R"/>
+                            <constraint firstItem="eN6-kT-qOd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="KVE-ql-Kok"/>
+                            <constraint firstItem="gBe-uw-EPf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="PbY-Ea-cTr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T9L-mt-PsD" secondAttribute="trailing" constant="120" id="SIx-wA-6Bl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eN6-kT-qOd" secondAttribute="bottom" constant="155" id="Tou-jR-0PW"/>
-                            <constraint firstItem="eN6-kT-qOd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xw9-8a-Xsd"/>
+                            <constraint firstAttribute="bottom" secondItem="gBe-uw-EPf" secondAttribute="bottom" constant="290" id="VYb-sC-ged"/>
+                            <constraint firstItem="eN6-kT-qOd" firstAttribute="top" secondItem="gBe-uw-EPf" secondAttribute="bottom" constant="41" id="W6s-Ww-fdJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t4y-K4-AOz" secondAttribute="trailing" constant="141" id="amJ-UU-1Xr"/>
+                            <constraint firstItem="t4y-K4-AOz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="d0c-MK-3em"/>
                             <constraint firstItem="T9L-mt-PsD" firstAttribute="top" secondItem="Gks-IE-PXX" secondAttribute="bottom" constant="6" id="eX2-5y-iAE"/>
-                            <constraint firstItem="gBe-uw-EPf" firstAttribute="top" secondItem="t4y-K4-AOz" secondAttribute="bottom" constant="48" id="g8Q-Wd-OlY"/>
-                            <constraint firstItem="eN6-kT-qOd" firstAttribute="top" secondItem="gBe-uw-EPf" secondAttribute="bottom" constant="41" id="ge0-Iq-lvB"/>
+                            <constraint firstItem="gBe-uw-EPf" firstAttribute="top" secondItem="t4y-K4-AOz" secondAttribute="bottom" constant="48" id="gtJ-FV-GwR"/>
                             <constraint firstItem="Gks-IE-PXX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-36" id="iQQ-wW-pE1"/>
                             <constraint firstItem="Gks-IE-PXX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="lFa-j0-Z00"/>
-                            <constraint firstItem="gBe-uw-EPf" firstAttribute="centerX" secondItem="t4y-K4-AOz" secondAttribute="centerX" id="sfK-wZ-Y30"/>
-                            <constraint firstItem="gBe-uw-EPf" firstAttribute="centerX" secondItem="eN6-kT-qOd" secondAttribute="centerX" id="wOq-gZ-Rne"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gBe-uw-EPf" secondAttribute="trailing" constant="138" id="vYr-zj-jHb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Gks-IE-PXX" secondAttribute="trailing" constant="-46" id="wwB-a2-pBF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
