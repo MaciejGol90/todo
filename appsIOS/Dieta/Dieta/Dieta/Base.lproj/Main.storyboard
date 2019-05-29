@@ -425,42 +425,37 @@ ziarna kakaowe (cacao nibs) - 1 łyżka</mutableString>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiN-Wz-ahc">
-                                <rect key="frame" x="30" y="65" width="85" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="uvh-ga-dHq"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="83" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="gN0-71-vX9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faza 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKr-eW-wM7">
-                                <rect key="frame" x="115.5" y="65" width="80.5" height="63"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-6u-HRu">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-6u-HRu">
                                 <rect key="frame" x="20" y="169" width="271" height="30"/>
                                 <state key="normal" title="Lista produktów dozwolonych w I FAZIE"/>
                                 <connections>
                                     <segue destination="3HF-7f-5Ys" kind="presentation" id="saZ-fg-IBe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Faza 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKr-eW-wM7">
+                                <rect key="frame" x="167" y="67" width="80.5" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80.5" id="jXR-RT-HGV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="d7c-6u-HRu" firstAttribute="centerX" secondItem="PKr-eW-wM7" secondAttribute="centerX" id="47I-Zj-375"/>
-                            <constraint firstItem="kiN-Wz-ahc" firstAttribute="bottom" secondItem="PKr-eW-wM7" secondAttribute="bottom" id="BRh-S2-sBa"/>
-                            <constraint firstItem="kiN-Wz-ahc" firstAttribute="leading" secondItem="K1s-no-ytK" secondAttribute="leading" constant="30" id="CFs-9S-rGB"/>
-                            <constraint firstItem="kiN-Wz-ahc" firstAttribute="top" secondItem="K1s-no-ytK" secondAttribute="top" constant="21" id="GtE-ji-WyK"/>
-                            <constraint firstItem="kiN-Wz-ahc" firstAttribute="top" secondItem="PKr-eW-wM7" secondAttribute="top" id="NPk-lZ-sLc"/>
+                            <constraint firstItem="kiN-Wz-ahc" firstAttribute="top" secondItem="K1s-no-ytK" secondAttribute="top" constant="39" id="4ir-Yj-afu"/>
                             <constraint firstItem="d7c-6u-HRu" firstAttribute="leading" secondItem="dkh-b5-hec" secondAttribute="leadingMargin" id="Nln-Sv-gv6"/>
-                            <constraint firstItem="K1s-no-ytK" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PKr-eW-wM7" secondAttribute="trailing" id="ZUS-Sw-7wa"/>
-                            <constraint firstItem="PKr-eW-wM7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kiN-Wz-ahc" secondAttribute="trailing" id="msE-km-uLm"/>
-                            <constraint firstItem="K1s-no-ytK" firstAttribute="trailing" secondItem="kiN-Wz-ahc" secondAttribute="trailing" constant="299" id="wGV-fl-Cwl"/>
-                            <constraint firstItem="d7c-6u-HRu" firstAttribute="top" secondItem="kiN-Wz-ahc" secondAttribute="bottom" constant="41" id="xck-Et-lhg"/>
+                            <constraint firstItem="kiN-Wz-ahc" firstAttribute="leading" secondItem="K1s-no-ytK" secondAttribute="leading" constant="20" id="mVF-BQ-gME"/>
+                            <constraint firstItem="K1s-no-ytK" firstAttribute="trailing" secondItem="PKr-eW-wM7" secondAttribute="trailing" constant="166.5" id="yOr-du-7h8"/>
+                            <constraint firstItem="PKr-eW-wM7" firstAttribute="leading" secondItem="kiN-Wz-ahc" secondAttribute="trailing" constant="113" id="ybO-CC-krv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K1s-no-ytK"/>
                     </view>
@@ -769,7 +764,7 @@ ziarna kakaowe (cacao nibs) - 1 łyżka
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="3oH-WW-UFp"/>
-        <segue reference="ePW-lj-Bge"/>
-        <segue reference="dMV-55-6VD"/>
+        <segue reference="gN0-71-vX9"/>
+        <segue reference="d6l-zI-mlz"/>
     </inferredMetricsTieBreakers>
 </document>
