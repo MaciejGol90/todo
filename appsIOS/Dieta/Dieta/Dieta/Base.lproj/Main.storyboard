@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSN-N1-72S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-568.1159420289855" y="-86.383928571428569"/>
+            <point key="canvasLocation" x="-1114" y="-315"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cE9-zC-is1">
@@ -405,6 +405,9 @@ ziarna kakaowe (cacao nibs) - 1 łyżka</mutableString>
                                 <rect key="frame" x="141" y="255" width="153" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Założenia Diety"/>
+                                <connections>
+                                    <segue destination="AdX-Gl-cbF" kind="presentation" id="XvQ-Bn-fJq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -440,21 +443,7 @@ ziarna kakaowe (cacao nibs) - 1 łyżka</mutableString>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiN-Wz-ahc">
-                                <rect key="frame" x="20" y="83" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="gN0-71-vX9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-6u-HRu">
-                                <rect key="frame" x="20" y="169" width="271" height="30"/>
-                                <state key="normal" title="Lista produktów dozwolonych w I FAZIE"/>
-                                <connections>
-                                    <segue destination="3HF-7f-5Ys" kind="presentation" id="saZ-fg-IBe"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Faza 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKr-eW-wM7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faza 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKr-eW-wM7">
                                 <rect key="frame" x="167" y="67" width="80.5" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80.5" id="jXR-RT-HGV"/>
@@ -463,12 +452,33 @@ ziarna kakaowe (cacao nibs) - 1 łyżka</mutableString>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-6u-HRu">
+                                <rect key="frame" x="72" y="157" width="271" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="khA-TO-Di1"/>
+                                </constraints>
+                                <state key="normal" title="Lista produktów dozwolonych w I FAZIE"/>
+                                <connections>
+                                    <segue destination="3HF-7f-5Ys" kind="presentation" id="saZ-fg-IBe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiN-Wz-ahc">
+                                <rect key="frame" x="20" y="58" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="gN0-71-vX9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="d7c-6u-HRu" firstAttribute="top" secondItem="PKr-eW-wM7" secondAttribute="bottom" constant="27" id="0bS-HB-ZrS"/>
                             <constraint firstItem="kiN-Wz-ahc" firstAttribute="top" secondItem="K1s-no-ytK" secondAttribute="top" constant="39" id="4ir-Yj-afu"/>
-                            <constraint firstItem="d7c-6u-HRu" firstAttribute="leading" secondItem="dkh-b5-hec" secondAttribute="leadingMargin" id="Nln-Sv-gv6"/>
+                            <constraint firstItem="PKr-eW-wM7" firstAttribute="top" secondItem="K1s-no-ytK" secondAttribute="top" constant="23" id="N2y-wI-s9u"/>
+                            <constraint firstItem="d7c-6u-HRu" firstAttribute="leading" secondItem="K1s-no-ytK" secondAttribute="leading" constant="72" id="TXL-yL-IrT"/>
+                            <constraint firstItem="PKr-eW-wM7" firstAttribute="centerX" secondItem="d7c-6u-HRu" secondAttribute="centerX" id="YxB-tk-GgI"/>
+                            <constraint firstItem="K1s-no-ytK" firstAttribute="bottom" secondItem="d7c-6u-HRu" secondAttribute="bottom" constant="675" id="ZeR-fg-4Y6"/>
                             <constraint firstItem="kiN-Wz-ahc" firstAttribute="leading" secondItem="K1s-no-ytK" secondAttribute="leading" constant="20" id="mVF-BQ-gME"/>
                             <constraint firstItem="K1s-no-ytK" firstAttribute="trailing" secondItem="PKr-eW-wM7" secondAttribute="trailing" constant="166.5" id="yOr-du-7h8"/>
                             <constraint firstItem="PKr-eW-wM7" firstAttribute="leading" secondItem="kiN-Wz-ahc" secondAttribute="trailing" constant="113" id="ybO-CC-krv"/>
